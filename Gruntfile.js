@@ -9,6 +9,8 @@
 
 module.exports = function (grunt) {
 
+  var request = require('request');
+
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -85,7 +87,19 @@ module.exports = function (grunt) {
                 '/app/styles',
                 connect.static('./app/styles')
               ),
-              connect.static(appConfig.app)
+              connect.static(appConfig.app),
+              function(req, res) {
+                var resourceUrl = req.url;
+
+                if (resourceUrl.charAt(0) == "/") {
+                  resourceUrl = resourceUrl.slice(1);
+                }
+                console.log('http://localhost:3000/' + resourceUrl);
+
+                req
+                  .pipe(request('http://localhost:3000/' + resourceUrl))
+                  .pipe(res);
+              }
             ];
           }
         }

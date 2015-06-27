@@ -8,6 +8,10 @@
  * Controller of the ppmtApp
  */
 angular.module('ppmtApp')
-  .controller('mainCtrl', function ($scope) {
+  .controller('mainCtrl', function ($scope, userService) {
+    userService.getUser().$promise.then(function(response) {
+      $scope.userName = response.userName;
+    });
+
     console.log('This is home state');
   });
