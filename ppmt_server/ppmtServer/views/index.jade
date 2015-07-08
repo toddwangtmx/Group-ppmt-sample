@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1= title
-  p API 1: /api/getuser method: get response: json
+  p API 1: /api/getuser method: GET response: json
+  p API 2: /api/overview/:id method: GET response: json
+  p API 3: /api/overview/:id method: PUT response: json Body: {planDescription: ''}
+  p API 4: /api/kmo/:id method: GET response: json
+  p API 5: /api/kmo/:id method: PUT response: json Body: {keyMedicalObject: []}
+  p API 6: /api/gap/:id method: GET response: json
+  p API 7: /api/gap/:id method: PUT response: json Body: {gap: []}
