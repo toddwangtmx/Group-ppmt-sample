@@ -1,0 +1,50 @@
+header.head {
+    padding: 50px;
+    padding-left: 10px;
+    padding-bottom: 90px;
+    text-align: center;
+    border: 0px;
+    font-size: 30px;
+    background-image: url("/images/jGlzr.png");
+    color: white;
+
+}
+a.datelink:link{
+    color: white;
+    text-decoration: none;
+}
+
+a.datelink:link{
+   color: black;
+   text-decoration: none;
+
+}
+
+a.datelink:hover {
+    color: black;
+    text-decoration: none;
+}
+
+nav.firstLevel {
+    padding: 50px;
+    padding-bottom: 90px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    border: 0px;
+    background-image: url("/images/back.png");
+}
+
+
+ 
+
+
+a.linked:link{
+    color: white;
+    text-decoration: none;
+
+}
+a.linked:hover {
+    color: yellow;
+    text-decoration: none;
+}
