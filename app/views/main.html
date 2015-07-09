@@ -7,7 +7,7 @@
             <p>User Name: {{userName}}</p>
         </div>
         <div class="col-md-5 col-sm-4">
-            <a class="datelink" href="#">date</a>
+            <p>{{date | date:'shortDate'}}</p>
         </div>
     </header>
 </div>
@@ -25,5 +25,6 @@
     <ui-view></ui-view>
 </div>
 <div class="row">
-    Blizzhujiechen
+    <div class="col-md-1"><img src="/images/yeoman.png"></div>
+    <div class="col-md-2">Blizzhujiechen</div>
 </div>

@@ -7,17 +7,22 @@ header.head {
     font-size: 30px;
     background-image: url("/images/jGlzr.png");
     color: white;
-
+    font-family: "Comic Sans MS";
 }
-a.datelink:link{
+
+a.datelink:link {
     color: white;
     text-decoration: none;
 }
 
-a.datelink:link{
-   color: black;
-   text-decoration: none;
+a.datelink:link {
+    color: black;
+    text-decoration: none;
+}
 
+a.datelink:visited {
+    color: white;
+    text-decoration: none;
 }
 
 a.datelink:hover {
@@ -33,18 +38,20 @@ nav.firstLevel {
     text-align: center;
     border: 0px;
     background-image: url("/images/back.png");
+    font-family: "Comic Sans MS";
 }
 
-
- 
-
-
-a.linked:link{
+a.linked:link {
     color: white;
     text-decoration: none;
-
 }
+
+a.linked:visited {
+    color: white;
+    text-decoration: none;
+}
+
 a.linked:hover {
-    color: yellow;
+    color: black;
     text-decoration: none;
 }
