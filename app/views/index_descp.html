@@ -1,0 +1,21 @@
+<div class="jumbotron" >
+<div>
+    <p ng-show="editable==false" ng-click="editText()">{{greeting}}</p>
+    <div  ng-show="editable==true">
+      <input type="text" ng-model="greeting">
+    </div>
+
+  <button ng-click="updateText(greeting)">update</button>
+    <button ng-click="stepBack()">stepback</button>
+    <hr>
+
+</div>
+<div>
+    <p style="font-size: 30px">Submit report: pdf submit: report</p>
+</div>
+<div ng-click="univer_time()" style="font-size: 30px">
+    Last modified date:{{planDescription.lastModified}}
+</div>
+</div>
+
+<hr>
