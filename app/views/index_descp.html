@@ -1,6 +1,8 @@
 <div>
-    <p>Description: Hello Group1!</p>
-    <button>N/A</button>
+    <p ng-if="editable==false" ng-click="editText()">{{greeting}}</p>
+    <input type="text" ng-model="greeting" ng-if="editable==true">
+    <button>A</button>
+    <button>B</button>
 </div>
 <div>
     <p>Submit report: pdf submit: report</p>
@@ -8,4 +10,4 @@
 <div>
     Last modified date:
 </div>
-<div></div>
+<div>{{planDescription.planName}}</div>
