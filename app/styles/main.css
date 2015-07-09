@@ -35,10 +35,6 @@ nav.firstLevel {
     background-image: url("/images/back.png");
 }
 
-
- 
-
-
 a.linked:link{
     color: white;
     text-decoration: none;
@@ -47,4 +43,9 @@ a.linked:link{
 a.linked:hover {
     color: yellow;
     text-decoration: none;
+}
+
+.secnav {
+    text-align: center;
+    font-size: 15px;
 }
