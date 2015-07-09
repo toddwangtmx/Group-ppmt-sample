@@ -36,6 +36,6 @@ angular
       .state('home.mdPlan.index_descp',{
         url:'/index_descp',
         templateUrl:'views/index_descp.html',
-        controller:''
+        controller:'overviewCtrl'
       })
   });
