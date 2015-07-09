@@ -1,13 +1,16 @@
 <div>
-    <p ng-if="editable==false" ng-click="editText()">{{greeting}}</p>
-    <input type="text" ng-model="greeting" ng-if="editable==true">
-    <button>A</button>
-    <button>B</button>
+    <p ng-show="editable==false" ng-click="editText()">{{greeting}}</p>
+    <div  ng-show="editable==true">
+      <input type="text" ng-model="greeting">
+    </div>
+
+  <button ng-click="updateText(greeting)">update</button>
+    <button ng-click="stepBack()">stepback</button>
 </div>
 <div>
     <p>Submit report: pdf submit: report</p>
 </div>
-<div>
-    Last modified date:
+<div ng-click="univer_time()">
+    Last modified date:{{planDescription.lastModified}}
 </div>
-<div>{{planDescription.planName}}</div>
+<div>{{planDescription.lastModified}}</div>
