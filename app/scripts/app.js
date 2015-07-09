@@ -18,7 +18,7 @@ angular
     'ui.bootstrap'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/home/mdPlan/index_descp');
+    $urlRouterProvider.otherwise('/home/mdPlan/descp_Ivy');
 
     $stateProvider
       .state('home', {
@@ -34,8 +34,8 @@ angular
         abstract:true
       })
       .state('home.mdPlan.index_descp',{
-        url:'/index_descp',
-        templateUrl:'views/index_descp.html',
+        url:'/descp_Ivy',
+        templateUrl:'views/descp_Ivy.html',
         controller:''
       })
   });
