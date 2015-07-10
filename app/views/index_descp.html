@@ -1,18 +1,31 @@
+<<<<<<< HEAD
 
 <div>
     <p ng-show="editable==false" ng-click="editText()">{{greeting}}</p>
+=======
+<div class="content" >
+<div class="description">
+    <p ng-show="editable==false" ng-click="editText()">Description: {{greeting}}</p>
+>>>>>>> ae6b4151efcb4d7be59dacf87cda63246bb9ae97
     <div  ng-show="editable==true">
       <input type="text" ng-model="greeting">
     </div>
 
-  <button ng-click="updateText(greeting)">update</button>
-    <button ng-click="stepBack()">stepback</button>
-</div>
-<div>
-    <p>Submit report: pdf submit: report</p>
-</div>
+  <button ng-click="updateText(greeting)"><span style="color: green;" class="glyphicon glyphicon-ok"></button>
+    <button ng-click="stepBack()"><span style="color: #FF6C47;" class="glyphicon glyphicon-remove"></button>
+    <hr>
+</div >
+
 <div ng-click="univer_time()">
-    Last modified date:{{planDescription.lastModified}}
+    <p>Submit Report: <input type="submit" value= ".pdf | submit:report" style="font-size: 20px"></p>
 </div>
+<div style="font-size: 20px; margin-top: 30px;">
+    Last Modified Date:{{planDescription.lastModified}}
+</div>
+</div>
+<<<<<<< HEAD
 <div>{{planDescription.lastModified}}</div>
+=======
+
+>>>>>>> ae6b4151efcb4d7be59dacf87cda63246bb9ae97
 

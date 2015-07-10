@@ -1,0 +1,34 @@
+.the-div {
+    left: 10%;
+    width: 90%;
+    height: 100%;
+    margin: 2% auto;
+    border: 5px solid #f1f1f1
+}
+
+.secondlevelnav {
+    width: 85%;
+    margin: 15px auto;
+}
+
+.secondlevelnav a {
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.secondlevelnav a:hover {
+    text-decoration: none;
+    background-color: yellow;
+}
+
+.the-section {
+    text-indent: 5%;
+    padding: 30px;
+    font-size: 16px;
+}
+
+
+

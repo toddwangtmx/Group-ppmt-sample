@@ -1,0 +1,14 @@
+<div ng-controller = "descriptionCtrl">
+    <pre ng-click="update(user)">Description:{{user.myData}}</pre>
+    <form name="form" ng-show="user.myData.showIt" >
+    <textarea ng-model = "user.myData"></textarea>
+    <input type="checkbox" ng-model = "" name="save" ng-true-value="yes" >
+    <input type="checkbox" ng-model = "" name="discard" ng-false-value="no">
+    <form>
+</div>
+<div>
+    <p>Submit report: pdf submit: report</p>
+</div>
+<div>
+    Last modified date:
+</div>
