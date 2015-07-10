@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 /**
  * @ngdoc overview
  * @name ppmtApp
@@ -40,4 +38,4 @@ angular
         controller:'overviewCtrl'
       })
   });
->>>>>>> 99a4aef38bf3ac87c4d26d4b0d4964a6e0d4de49
+
