@@ -6,7 +6,7 @@
 
 angular.module('ppmtApp')
   .factory('planDescription', function($resource) {
-    return $resource('/api/overview/:id', {}, {
+    return $resource('/api/overview/:id', {id:'@id'}, {
       getDescription: {method: 'GET'},
       putDescription:{method: 'PUT'}
     });
