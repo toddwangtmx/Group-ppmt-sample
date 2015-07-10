@@ -1,20 +1,20 @@
-<div class="jumbotron" >
-<div>
-    <p ng-show="editable==false" ng-click="editText()">{{greeting}}</p>
+<div class="content" >
+<div class="description">
+    <p ng-show="editable==false" ng-click="editText()">Description: {{greeting}}</p>
     <div  ng-show="editable==true">
       <input type="text" ng-model="greeting">
     </div>
 
-  <button ng-click="updateText(greeting)">update</button>
-    <button ng-click="stepBack()">stepback</button>
+  <button ng-click="updateText(greeting)"><span style="color: green;" class="glyphicon glyphicon-ok"></button>
+    <button ng-click="stepBack()"><span style="color: #FF6C47;" class="glyphicon glyphicon-remove"></button>
     <hr>
+</div >
 
+<div ng-click="univer_time()">
+    <p>Submit Report: <input type="submit" value= ".pdf | submit:report" style="font-size: 20px"></p>
 </div>
-<div>
-    <p style="font-size: 30px">Submit report: pdf submit: report</p>
-</div>
-<div ng-click="univer_time()" style="font-size: 30px">
-    Last modified date:{{planDescription.lastModified}}
+<div style="font-size: 20px; margin-top: 30px;">
+    Last Modified Date:{{planDescription.lastModified}}
 </div>
 </div>
 
