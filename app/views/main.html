@@ -1,25 +1,30 @@
 <div class="row">
-    <div class="row">
-     <header>
-     	<ul>
-     		<li><img src="favicon.ico"></li>
-     		<li><p>Date</p></li>
-     	
-     	<li><p>User Name: {{userName}}</p></li>
-     	</ul>
-     </header>
-
-        
-       <nav>
-       	<div><ul><li>Medical Plan</li><li>ETF</li><li>Admin</li></ul></div>
-       </nav>
-    </div>
-    <div class="row">
-        <ui-view></ui-view>
-    
-       
-    </div>
-    <div class="row">
-        Put your footer here.
-    </div>
+    <header class="head">
+        <div class="col-md-2 col-sm-4">
+            <a href="#"><img src="favicon.ico" width="50px" height="50px"></a>
+        </div>
+        <div class="col-md-5 col-sm-4">
+            <p>User Name: {{userName}}</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+            <p>{{date | date:'shortDate'}}</p>
+        </div>
+    </header>
+</div>
+<div class="row">
+    <nav class="firstLevel">
+        <div class="col-md-4 col-sm-4"><a class="linked" href="#">Medical Plan</a>
+        </div>
+        <div class="col-md-4 col-sm-4"><a class="linked" href="#">ETF</a>
+        </div>
+        <div class="col-md-4 col-sm-4"><a class="linked" href="#">Plan</a>
+        </div>
+    </nav>
+</div>
+<div class="row">
+    <ui-view></ui-view>
+</div>
+<div class="row">
+    <div class="col-md-1"><img src="/images/yeoman.png" width="80%" height="80%"></div>
+    <div class="col-md-2">Blizzhujiechen</div>
 </div>
