@@ -1,12 +1,12 @@
-<div class="content" >
-<div class="description">
-    <p ng-show="editable==false" ng-click="editText()">Description: {{greeting}}</p>
-    <div  ng-show="editable==true">
-      <input type="text" ng-model="greeting">
-    </div>
-
-  <button ng-click="updateText(greeting)"><span style="color: green;" class="glyphicon glyphicon-ok"></button>
-    <button ng-click="stepBack()"><span style="color: #FF6C47;" class="glyphicon glyphicon-remove"></button>
+<div class="content">
+    <div class="description">
+        <p ng-show="!editable" ng-click="editText()">Description: {{greeting}}</p>
+        <div ng-show="editable">
+            <input type="text" ng-model="greeting">
+        </div>
+        <button ng-click="updateText(greeting)"><span style="color: green" class="glyphicon glyphicon-ok"></button>
+    <button ng-click="stepBack()"><span style="color: #FF6C47" class="glyphicon glyphicon-remove"></button>
+    <!--do not use inline style!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <hr>
 </div >
 
@@ -17,5 +17,3 @@
     Last Modified Date:{{planDescription.lastModified}}
 </div>
 </div>
-
-

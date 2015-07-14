@@ -1,31 +1,31 @@
 <div class="top">
-<div class="row">
-    <header class="head">
-        <div class="col-md-2 col-sm-4">
-            <a href="#"><img src="favicon.ico" width="50px" height="50px"></a>
-        </div>
-        <div class="col-md-5 col-sm-4">
-            <p>User Name: {{userName}}</p>
-        </div>
-        <div class="col-md-5 col-sm-4">
-            <p>{{date | date:'shortDate'}}</p>
-        </div>
-    </header>
-</div>
-<div class="row">
-    <nav class="firstLevel">
-        <div class="col-md-4 col-sm-4"><a class="linked" href="#">Medical Plan</a>
-        </div>
-        <div class="col-md-4 col-sm-4"><a class="linked" href="#">ETF</a>
-        </div>
-        <div class="col-md-4 col-sm-4"><a class="linked" href="#">Plan</a>
-        </div>
-    </nav>
-</div>
-<div>
-    <ui-view></ui-view>
-</div>
-<div class="row">
-    <div class="col-md-1"><img src="/images/yeoman.png" width="80%" height="80%"></div>
-</div>
+    <div class="row">
+        <header class="head">
+            <div class="col-md-2 col-sm-4">
+                <a href="#"><img src="favicon.ico" width="50px" height="50px"></a>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <p>User Name: {{userName}}</p>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <p>Today is {{date | date:'shortDate'}}</p>
+            </div>
+        </header>
+    </div>
+    <div class="row" >
+        <nav class="firstLevel" >
+            <div class="col-md-4 col-sm-4"><a class="linked" ui-sref="home.mdPlan.index_descp">Medical Plan</a>
+            </div>
+            <div class="col-md-4 col-sm-4"><a class="linked" ui-sref="home.ETF">ETF</a>
+            </div>
+            <div class="col-md-4 col-sm-4"><a class="linked" ui-sref="home.Plan">Plan</a>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <ui-view></ui-view>
+    </div>
+    <div class="row">
+        <div class="col-md-1"><img src="/images/yeoman.png" width="80%" height="80%"></div>
+    </div>
 </div>
